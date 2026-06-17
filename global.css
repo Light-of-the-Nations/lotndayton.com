@@ -1,0 +1,66 @@
+:root {
+  --theme-blue: #1e3a76;
+  --theme-grey: #505050;
+  --theme-gold-light: #e3d7bd;
+  --theme-gold-dark: #aa9055;
+  --text-light: white;
+  --text-dark: black;
+  --background-1: white;
+  --background-2: #5f7298;
+}
+
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  font-weight: 300;
+}
+
+h1 {
+  font-size: 2.5rem;
+  padding-block: 2rem;
+  color: var(--theme-blue);
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 1.6rem;
+}
+
+@view-transition {
+  navigation: auto;
+}
+
+.os-n {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 300;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+.os-b {
+  font-family: 'Open Sans', sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  font-variation-settings: 'wdth' 100;
+}
+
+a {
+  color: var(--theme-gold-dark);
+  text-decoration-color: var(--theme-gold-light);
+  transition: text-decoration-color 0.2s;
+  &:hover,
+  &:focus {
+    text-decoration-color: var(--theme-gold-dark);
+  }
+}

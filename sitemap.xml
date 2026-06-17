@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- created with generateSitemap.sh v1.0.0 2026-06-17 -->
+<urlset
+  xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
+            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd"
+>
+  <url>
+    <loc>https://shelbyready.com/ministries/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <priority>1.00</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/privacy/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/sermons/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/about/pastor/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/about/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/visit/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+  <url>
+    <loc>https://shelbyready.com/give/</loc>
+    <lastmod>2026-06-17</lastmod>
+    <priority>0.80</priority>
+  </url>
+</urlset>
