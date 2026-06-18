@@ -64,3 +64,267 @@ a {
     text-decoration-color: var(--theme-gold-dark);
   }
 }
+
+.layout-container {
+  padding-inline: 2rem;
+  max-width: 864px;
+  width: 100%;
+  margin: auto;
+}
+
+/*
+HEADER
+*/
+.skip-link {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 0px;
+  background-color: white;
+  color: black;
+  overflow: hidden;
+  border: none;
+  display: block;
+  padding: 0;
+  z-index: 100;
+
+  &:focus {
+    height: auto;
+  }
+}
+
+header {
+  background-color: var(--theme-blue);
+  height: 80px;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    background-color: var(--theme-gold-light);
+    width: 100%;
+    height: 10px;
+    z-index: -1;
+  }
+}
+.Header-Layout-Container {
+  display: flex;
+  justify-content: space-between;
+
+  .Right-Menu {
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+
+    a {
+      color: var(--text-light);
+      text-decoration-color: transparent;
+      transition:
+        color 0.3s,
+        text-decoration-color 0.3s;
+
+      &:hover,
+      &:focus,
+      &.active {
+        color: var(--theme-gold-light);
+        text-decoration-color: var(--theme-gold-light);
+      }
+    }
+  }
+
+  .Logo-Group {
+    line-height: 1;
+    color: white;
+    text-decoration: none;
+    padding-block: -0.4rem;
+    display: flex;
+    align-items: center;
+    height: 80px;
+
+    .Image-Container {
+      position: relative;
+      line-height: 1;
+      top: 0px;
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+
+        height: 100%;
+        background-color: var(--theme-gold-dark);
+        border-radius: 50%;
+      }
+    }
+    img {
+      position: relative;
+      filter: invert();
+      line-height: 1;
+      z-index: 1;
+    }
+
+    .Logo-Text-Container {
+      padding-left: 0.5rem;
+    }
+    .Church-Name {
+      font-size: 1.3rem;
+    }
+    .Church-Denomination {
+      font-size: 0.83rem;
+      line-height: 1;
+    }
+  }
+}
+
+/*
+BLOCKQUOTE
+*/
+.Blockquote-Container {
+  background-color: var(--background-1);
+  text-align: center;
+  font-style: italic;
+  color: var(--theme-gold-dark);
+  padding: 1.5rem;
+
+  blockquote {
+    font-size: 1.5rem;
+    margin: 0;
+  }
+
+  cite {
+    font-size: 0.8rem;
+  }
+}
+
+@media (min-width: 800px) {
+  .Blockquote-Container {
+    blockquote {
+      font-size: 2rem;
+    }
+
+    cite {
+      font-size: 1rem;
+    }
+  }
+}
+
+/*
+FOOTER
+*/
+footer {
+  background-color: var(--theme-grey);
+  color: white;
+  padding-block: 1rem;
+
+  .Logo-Group {
+    line-height: 1;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+
+    .Image-Container {
+      line-height: 1;
+    }
+    img {
+      position: relative;
+      filter: invert();
+      line-height: 1;
+      z-index: 1;
+    }
+
+    .Logo-Text-Container {
+      padding-left: 0.5rem;
+    }
+    .Church-Name {
+      font-size: 1.3rem;
+    }
+    .Church-Denomination {
+      font-size: 0.83rem;
+      line-height: 1;
+    }
+  }
+
+  .Link-Menu a,
+  .Socials-Container a,
+  .Legal-Container a,
+  .Contact-Container a {
+    color: var(--text-light);
+    text-decoration-color: underline;
+    transition:
+      color 0.3s,
+      text-decoration-color 0.3s;
+
+    &:hover,
+    &:focus,
+    &.active {
+      color: var(--theme-gold-light);
+      text-decoration-color: var(--theme-gold-light);
+    }
+
+    &.active {
+      text-decoration-color: transparent;
+      pointer-events: none;
+    }
+  }
+
+  .Contact-Container a {
+    display: block;
+  }
+
+  .Link-Menu {
+    display: flex;
+    gap: 1rem;
+    padding-block: 1rem;
+  }
+
+  .Socials-Container {
+    padding-block: 1rem;
+    display: inline-flex;
+    gap: 1rem;
+
+    a,
+    svg {
+      height: 1.5rem;
+      width: 1.5rem;
+      line-height: 1;
+    }
+  }
+
+  .Opc-Link {
+    display: block;
+    img {
+      height: 3rem;
+      line-height: 1;
+    }
+  }
+
+  .Legal-Container {
+    padding-top: 1rem;
+    font-size: 0.8rem;
+
+    display: flex;
+    flex-direction: column;
+  }
+
+  address {
+    font-style: normal;
+  }
+
+  @media (min-width: 800px) {
+    .Footer-Layout {
+      display: flex;
+      gap: 2rem;
+      justify-content: space-between;
+    }
+
+    .Right-Container {
+      text-align: right;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+    }
+  }
+}
