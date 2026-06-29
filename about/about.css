@@ -1,0 +1,46 @@
+.Leaders-Section {
+  h2 {
+    padding-bottom: 2rem;
+  }
+}
+
+.Leadership-Container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.Leader {
+  flex: 0 0 100%;
+  img {
+    width: 200px;
+    height: 324px;
+    object-fit: cover;
+  }
+
+  .Name,
+  .Name a {
+    color: var(--theme-gold-dark);
+    font-weight: 500;
+    font-size: 1.2rem;
+  }
+
+  .Position {
+    font-style: italic;
+  }
+}
+
+@media (min-width: 500px) {
+  .Leader {
+    flex: 0 0 calc(50% - 0.5rem);
+    img {
+      width: 100%;
+    }
+  }
+}
+
+@media (min-width: 800px) {
+  .Leader {
+    flex: 0 0 calc(25% - (3rem) / 4);
+  }
+}
