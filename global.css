@@ -7,11 +7,23 @@
   --text-dark: black;
   --background-1: white;
   --background-2: #5f7298;
+  --background-3: #dddddd;
 }
 
 * {
   box-sizing: border-box;
   line-height: 1.5;
+}
+
+.outer-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+  margin-top: 10px;
 }
 
 h1,
