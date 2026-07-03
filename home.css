@@ -3,7 +3,7 @@ section {
 }
 
 .Hero-Section {
-  background: url('/assets/images/home-background.png');
+  background: url('./assets/images/home-background.png');
   background-position: center;
   background-size: cover;
 
