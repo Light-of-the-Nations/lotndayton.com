@@ -1,8 +1,8 @@
 document.body.classList.add('js-enabled');
 const navContainer = document.querySelector('header nav');
 
-const subdomain = '';
-// const subdomain = '/thegriffinlegends.com';
+// const subdomain = '';
+const subdomain = '/lotndayton.com';
 
 navContainer.innerHTML = `
 <ul>
@@ -12,6 +12,13 @@ navContainer.innerHTML = `
   <li><a href="${subdomain}/give" data-discover="true">Give</a></li>
   <li><a href="${subdomain}/visit" data-discover="true">Visit</a></li>
 </ul>`;
+
+// Add active class to currently active link
+let currentPageHeaderLink = navContainer.querySelector(
+  'a[href="' + window.location.pathname.slice(0, -1) + '"]',
+);
+currentPageHeaderLink?.classList.add('active');
+currentPageHeaderLink?.setAttribute('aria-current', 'page');
 
 // Build hamburger navigation to replace static navigation (if JS enabled)
 const closeButton = document.createElement('button');

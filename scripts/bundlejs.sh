@@ -1,5 +1,5 @@
 #!/bin/bash
-# reload-cincy/scripts/bundlejs.sh
+# lotndayton.com/scripts/bundlejs.sh
 # Created by Alexander Burdiss 6/10/22
 # Copyright (c) Alexander Burdiss
 #

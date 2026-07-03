@@ -79,7 +79,7 @@ a {
 
 .layout-container {
   padding-inline: 2rem;
-  max-width: 864px;
+  max-width: 1000px;
   width: 100%;
   margin: auto;
 }
@@ -443,10 +443,25 @@ footer {
     display: block;
   }
 
-  .Link-Menu {
+  .Link-Menu ul {
     display: flex;
     gap: 1rem;
     padding-block: 1rem;
+  }
+
+  ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    padding-top: 1rem;
+  }
+
+  li {
+    display: block;
+    width: 100%;
   }
 
   .Socials-Container {
@@ -487,6 +502,10 @@ footer {
       display: flex;
       gap: 2rem;
       justify-content: space-between;
+    }
+
+    ul {
+      flex-direction: row;
     }
 
     .Right-Container {

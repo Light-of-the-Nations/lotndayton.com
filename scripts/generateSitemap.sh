@@ -6,7 +6,7 @@
 # A simple sitemap generator.
 #
 
-version="1.0.0"
+version="1.0.1"
 projectName="lotndayton.com"
 # Files to ignore from the sitemap
 ignoredFiles=(
@@ -59,6 +59,8 @@ for i in "${filenames[@]}"; do
       priority="0.80";
       if [[ $path == "/" ]]; then
         priority="1.00"
+      elif [[ $path == "/privacy" ]]; then
+        priority="0.60"
       fi
       echo "  <url>" >> $sitemapfile
       echo "    <loc>https://$projectName$path</loc>" >> $sitemapfile

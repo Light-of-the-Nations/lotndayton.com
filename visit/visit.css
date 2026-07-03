@@ -50,6 +50,8 @@
   h3 {
     font-weight: 400;
     margin-top: 3rem;
+    font-size: 1.5rem;
+    color: var(--theme-blue);
   }
 
   dl {
@@ -65,6 +67,7 @@
   .layout-container {
     display: flex;
     flex-direction: column;
+    margin-bottom: 3rem;
   }
 }
 
@@ -75,7 +78,11 @@
       gap: 3rem;
     }
 
-    .Column {
+    .Left-Column {
+      flex: 2;
+    }
+
+    .Right-Column {
       flex: 1;
     }
   }

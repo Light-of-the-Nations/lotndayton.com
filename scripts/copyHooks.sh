@@ -1,5 +1,5 @@
 #!/bin/bash
-# reload-cincy/scripts/copyHooks.sh
+# lotndayton.com/scripts/copyHooks.sh
 # Created by Alexander Burdiss 6/20/22
 # Copyright (c) Alexander Burdiss
 #
