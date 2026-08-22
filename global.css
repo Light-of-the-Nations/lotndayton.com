@@ -3,6 +3,7 @@
   --theme-grey: #505050;
   --theme-gold-light: #e3d7bd;
   --theme-gold-dark: #aa9055;
+  --theme-gold-dark-hover: #c2a561;
   --text-light: white;
   --text-dark: black;
   --background-1: white;
@@ -75,6 +76,22 @@ a {
   &:focus {
     text-decoration-color: var(--theme-gold-dark);
   }
+}
+
+a.button {
+  background-color: var(--theme-gold-dark);
+  text-decoration: none;
+  color: var(--text-light);
+  padding: 0.75rem 1rem;
+  border-radius: 0.25rem;
+  transition: background-color 0.2s;
+  line-height: 1;
+  display: block;
+}
+
+a.button:hover,
+a.button:focus {
+  background-color: var(--theme-gold-dark-hover);
 }
 
 .layout-container {
@@ -223,7 +240,7 @@ header {
     &:hover,
     &:focus {
       .Image-Container::after {
-        background-color: #c2a561;
+        background-color: var(--theme-gold-dark-hover);
       }
     }
   }
