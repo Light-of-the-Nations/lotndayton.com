@@ -4,4 +4,4 @@ Disallow: /404.html
 User-agent: *
 Allow: /
 
-Sitemap: http://reloadcincy.com/sitemap.xml
+Sitemap: http://lotndayton.com/sitemap.xml
