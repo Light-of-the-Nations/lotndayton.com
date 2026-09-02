@@ -50,6 +50,7 @@
   h3 {
     font-weight: 400;
     margin-top: 3rem;
+    margin-bottom: 0.5rem;
     font-size: 1.5rem;
     color: var(--theme-blue);
   }
@@ -68,6 +69,48 @@
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
+  }
+
+  .accordion {
+    background-color: var(--background);
+    border-width: 0px;
+    border-top: 1px solid var(--background-2);
+    cursor: pointer;
+    padding: 1rem 0.5rem;
+    width: 100%;
+    text-align: left;
+    outline: none;
+    transition: 0.4s;
+  }
+
+  .accordion:first-of-type {
+    border-top: none;
+  }
+
+  .active,
+  .accordion:hover {
+    background-color: var(--background-hover);
+  }
+
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+  }
+
+  .accordion:after {
+    content: url('../assets/images/chevron.svg');
+    font-size: 13px;
+    float: right;
+    margin-left: 5px;
+    transform: rotate(0deg);
+    transition: transform 0.2s;
+  }
+
+  .active:after {
+    transform: rotate(180deg);
   }
 }
 
