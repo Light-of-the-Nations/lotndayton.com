@@ -59,8 +59,10 @@ for i in "${filenames[@]}"; do
       priority="0.80";
       if [[ $path == "/" ]]; then
         priority="1.00"
-      elif [[ $path == "/privacy" ]]; then
+      elif [[ $path == "/about/pastor/" ]]; then
         priority="0.60"
+      elif [[ $path == "/privacy-policy/" ]]; then
+        priority="0.40"
       fi
       echo "  <url>" >> $sitemapfile
       echo "    <loc>https://$projectName$path</loc>" >> $sitemapfile
