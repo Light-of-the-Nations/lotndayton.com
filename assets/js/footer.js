@@ -3,8 +3,8 @@ document.querySelector('#copyright').innerText = COPYRIGHT_TEXT;
 
 const footerNavContainer = document.querySelector('footer nav');
 
-// const footerSubdomain = '';
-const footerSubdomain = '/lotndayton.com';
+const footerSubdomain = '';
+// const footerSubdomain = '/lotndayton.com';
 
 footerNavContainer.innerHTML = `
   <ul>
