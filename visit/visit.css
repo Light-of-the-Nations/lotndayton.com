@@ -81,6 +81,11 @@
     text-align: left;
     outline: none;
     transition: 0.4s;
+    display: flex;
+    gap: 1rem;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--text-dark);
   }
 
   .accordion:first-of-type {
@@ -88,13 +93,13 @@
   }
 
   .active,
-  .accordion:hover {
+  .accordion:hover,
+  .accordion:focus {
     background-color: var(--background-hover);
   }
 
   .panel {
     padding: 0 18px;
-    background-color: white;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-out;
@@ -104,7 +109,6 @@
     content: url('../assets/images/chevron.svg');
     font-size: 13px;
     float: right;
-    margin-left: 5px;
     transform: rotate(0deg);
     transition: transform 0.2s;
   }
