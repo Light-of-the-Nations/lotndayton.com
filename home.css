@@ -31,10 +31,10 @@ section {
 
     span {
       display: block;
+      line-height: 1.2;
     }
     span:nth-of-type(2) {
       color: var(--theme-gold-light);
-      margin-top: -1rem;
     }
   }
 }
