@@ -3,6 +3,7 @@
   --theme-grey: #505050;
   --theme-gold-light: #e3d7bd;
   --theme-gold-dark: #aa9055;
+  --theme-gold-darkest: #665633;
   --theme-gold-dark-hover: #c2a561;
   --text-light: white;
   --text-dark: black;
@@ -70,7 +71,7 @@ h2 {
 }
 
 a {
-  color: var(--theme-gold-dark);
+  color: var(--theme-gold-darkest);
   text-decoration-color: var(--theme-gold-light);
   transition: text-decoration-color 0.2s;
   &:hover,
@@ -80,7 +81,7 @@ a {
 }
 
 a.button {
-  background-color: var(--theme-gold-dark);
+  background-color: var(--theme-gold-darkest);
   text-decoration: none;
   color: var(--text-light);
   padding: 0.75rem 1rem;
@@ -92,7 +93,7 @@ a.button {
 
 a.button:hover,
 a.button:focus {
-  background-color: var(--theme-gold-dark-hover);
+  background-color: var(--theme-gold-dark);
 }
 
 .layout-container {
@@ -391,6 +392,7 @@ BLOCKQUOTE
 
   cite {
     font-size: 0.8rem;
+    color: var(--theme-gold-darkest);
   }
 }
 

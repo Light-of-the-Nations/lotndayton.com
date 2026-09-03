@@ -22,7 +22,7 @@
 
   .Name,
   .Name a {
-    color: var(--theme-gold-dark);
+    color: var(--theme-gold-darkest);
     font-weight: 500;
     font-size: 1.2rem;
   }
