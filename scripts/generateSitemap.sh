@@ -57,15 +57,17 @@ for i in "${filenames[@]}"; do
       temp_var="${i#.}"
       path="${temp_var%index.html}"
       priority="0.80";
+      renderedpath=$path
       if [[ $path == "/" ]]; then
         priority="1.00"
+        renderedpath=""
       elif [[ $path == "/about/pastor/" ]]; then
         priority="0.60"
       elif [[ $path == "/privacy-policy/" ]]; then
         priority="0.40"
       fi
       echo "  <url>" >> $sitemapfile
-      echo "    <loc>https://$projectName$path</loc>" >> $sitemapfile
+      echo "    <loc>https://$projectName$renderedpath</loc>" >> $sitemapfile
       echo "    <lastmod>$now</lastmod>" >> $sitemapfile
       echo "    <priority>$priority</priority>" >> $sitemapfile
       echo "  </url>" >> $sitemapfile
