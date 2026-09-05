@@ -230,6 +230,7 @@ header {
       filter: invert();
       line-height: 1;
       z-index: 1;
+      height: 103px;
     }
 
     .Church-Name {
@@ -434,6 +435,7 @@ footer {
       filter: invert();
       line-height: 1;
       z-index: 1;
+      height: 103px;
     }
 
     .Logo-Text-Container {
