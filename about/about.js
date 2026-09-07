@@ -16,7 +16,7 @@ const QUERY = encodeURIComponent(`*[_type in ["${PAGE_NAME}", "leader"]]{
     name,
     role,
     email,
-    biography,
+    pastor,
     "imageUrl": image.asset->url,
     "imageAlt": image.alt
   }
@@ -47,10 +47,11 @@ fetch(URL)
     );
 
     const leaderMarkdowns = leaderData.map((leader) => {
+      console.log(leader);
       return `<div class="Leader">
                 <img alt="${leader.imageAlt}" src="${leader.imageUrl}" />
                 <div class="Name">
-                  ${!!leader.biography ? `<a href="./pastor" data-discover="true">${leader.name}</a>` : leader.name}
+                  ${!!leader.pastor ? `<a href="./pastor" data-discover="true">${leader.name}</a>` : leader.name}
                 </div>
                 <div class="Position">${leader.role}</div>
                 ${
