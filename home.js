@@ -30,7 +30,6 @@ const eventsHeadlineContainer = document.querySelector(
 fetch(URL)
   .then((res) => res.json())
   .then(({ result }) => {
-    console.log(result);
     const page = result.find((obj) => obj?._id === PAGE_NAME);
     const {
       bannerHeadline,
