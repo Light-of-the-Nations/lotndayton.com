@@ -47,7 +47,6 @@ fetch(URL)
     );
 
     const leaderMarkdowns = leaderData.map((leader) => {
-      console.log(leader);
       return `<div class="Leader">
                 <img alt="${leader.imageAlt}" src="${leader.imageUrl}" />
                 <div class="Name">
