@@ -16,8 +16,8 @@
   flex: 0 0 100%;
   img {
     width: 200px;
-    height: 324px;
-    object-fit: cover;
+    height: 326px;
+    object-fit: contain;
   }
 
   .Name,
@@ -35,9 +35,6 @@
 @media (min-width: 500px) {
   .Leader {
     flex: 0 0 calc(50% - 0.5rem);
-    img {
-      width: 100%;
-    }
   }
 }
 
